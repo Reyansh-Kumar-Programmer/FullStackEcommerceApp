@@ -4,7 +4,7 @@ import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
 import { StatusBar } from "expo-status-bar";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Icon } from "@/components/ui/icon";
-import { ShoppingCart } from "lucide-react-native";
+import { ShoppingCart, User } from "lucide-react-native";
 import { Pressable } from "react-native";
 import { useCart } from "@/store/cartStore";
 import { Text } from "@/components/ui/text";
@@ -23,6 +23,13 @@ export default function _layout() {
                 <Pressable className="flex-row gap-2">
                   <Icon as={ShoppingCart} size="xl" />
                   <Text>{cartItemNum}</Text>
+                </Pressable>
+              </Link>
+            ),
+            headerLeft: () => (
+              <Link href="/login" asChild>
+                <Pressable className="flex-row gap-2">
+                  <Icon as={User} size="xl" />
                 </Pressable>
               </Link>
             ),
