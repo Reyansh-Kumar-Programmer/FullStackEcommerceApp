@@ -32,7 +32,7 @@ export default function LoginScreen() {
               {/* EyeIcon, EyeOffIcon are both imported from 'lucide-react-native' */}
               <InputIcon
                 as={showPassword ? EyeIcon : EyeOffIcon}
-                className="text-darkBlue-500"
+                className="text-black"
               />
             </InputSlot>
           </Input>
