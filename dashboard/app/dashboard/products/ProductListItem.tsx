@@ -1,8 +1,8 @@
-import { Card } from "@/components/ui/card";
-import { Image } from "@/components/ui/image";
-import { Text } from "@/components/ui/text";
-import { Heading } from "@/components/ui/heading";
-import Link from "next/link";
+import { Card } from '@/components/ui/card';
+import { Image } from '@/components/ui/image';
+import { Text } from '@/components/ui/text';
+import { Heading } from '@/components/ui/heading';
+import Link from 'next/link';
 
 export default function ProductListItem({ product }) {
   return (
